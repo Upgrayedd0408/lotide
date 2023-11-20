@@ -24,9 +24,9 @@ const findMiddle = function(array) {
   if (array.length <= 2) {
     return midValue;
   } else if (array.length % 2 === 0) {
-    midValue.push(array.length / 2, array.length / 2 + 1);
+    midValue.push(array[array.length / 2 - 1], array[array.length / 2]);
   } else if (array.length % 2 !== 0) {
-    midValue.push(Math.ceil(array.length / 2))
+    midValue.push(array[Math.floor(array.length / 2)]);
   }
   return midValue;
 };
