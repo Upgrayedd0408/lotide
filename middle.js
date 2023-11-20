@@ -19,7 +19,7 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-const findMiddle = function(array) {
+const middle = function(array) {
   let midValue = [];
   if (array.length <= 2) {
     return midValue;
@@ -31,10 +31,10 @@ const findMiddle = function(array) {
   return midValue;
 };
 
-console.log(findMiddle([1, 2, 3]));
+console.log(middle([1, 2, 3]));
 
-assertArraysEqual(findMiddle([1, 2, 3]), [2]);
-assertArraysEqual(findMiddle([1, 2]), []);
-assertArraysEqual(findMiddle([1, 2, 3, 4]), [2, 3]);
+assertArraysEqual(middle([1, 2, 3]), [2]);
+assertArraysEqual(middle([1, 2]), []);
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
 
 
