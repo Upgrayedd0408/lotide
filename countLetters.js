@@ -11,10 +11,10 @@ const countLetters = function (sentence) {
   for (const letter of sentence) {
     if (letter.match(/[a-z]/i)) {
       let lowerCaseLetter = letter.toLowerCase();
-      if (results[letter]) {
-        results[letter] += 1;
+      if (results[lowerCaseLetter]) {
+        results[lowerCaseLetter] += 1;
       } else {
-        results[letter] = 1;
+        results[lowerCaseLetter] = 1;
       }
     }
   }
