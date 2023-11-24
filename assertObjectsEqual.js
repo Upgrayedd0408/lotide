@@ -18,6 +18,19 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 const assertObjectsEqual = function(obj1, obj2) {
   const inspect = require('util').inspect;
   if (eqObjects(obj1, obj2)) {
