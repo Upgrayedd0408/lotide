@@ -20,8 +20,8 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const eqObjects = function(object1, object2) {
-  object1Keys = Object.keys(object1);
-  object2Keys = Object.keys(object2);
+  const object1Keys = Object.keys(object1);
+  const object2Keys = Object.keys(object2);
   
   if (object1Keys.length !== object2Keys.length) {
     return false;
